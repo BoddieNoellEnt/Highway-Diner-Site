@@ -25,7 +25,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #007bff; }
+    color: #DA0527; }
 
 h1,
 h2,
@@ -109,6 +109,7 @@ body {
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
+
   @media (min-width: 992px) {
     #mainNav {
       border-color: transparent;
@@ -158,10 +159,16 @@ header.masthead {
   }
   header.masthead p {
     font-weight: 300; }
+
   @media (min-width: 768px) {
     header.masthead p {
       font-size: 1.15rem; } }
   @media (min-width: 992px) {
+
+    header.masthead .my-auto{
+        margin-bottom: 12% !important;
+    }
+
     header.masthead {
       height: 100vh;
       min-height: 650px;
@@ -238,6 +245,6 @@ header.masthead {
   border-color: #007bff; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
-    background-color: #ee4b28 !important; }
+    background-color: #DA0527 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
