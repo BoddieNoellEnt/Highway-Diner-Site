@@ -248,3 +248,11 @@ header.masthead {
     background-color: #DA0527 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+ #bne-order-button{
+ position: relative;
+ top: 80%;  
+}
+}
