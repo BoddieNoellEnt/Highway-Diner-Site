@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,6 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
           rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
@@ -18,7 +17,8 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d670098f8.js" crossorigin="anonymous"></script>
 </head>
 <body id="page-top">
 <style>
@@ -44,6 +44,7 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#careers">Careers</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://www.facebook.com/rockymounthighwaydiner"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://twitter.com/DinerMount"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div>
     </div>
@@ -51,11 +52,23 @@
 <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <a class="btn btn-primary btn-xl js-scroll-trigger chownow-order-online"  href='http://ordering.chownow.com/order/10523/locations' target='_blank'>Order Online</a>
+          <div class="col-md-12 mx-auto">
+              <button class="btn btn-xl btn-primary btn-image btn-doordash dd-online ">Delivery</button>
+              <button class="btn btn-xl btn-primary btn-image btn-chownow chownow-order-online ">Pick Up</button>
+              <hr />
+            <!--
+            <a href='https://www.doordash.com/store/highway-diner-rocky-mount-534574/en-US' target='_blank' class="btn btn-primary btn-xl">
+                <img src="img/DoorDash_icon.png" class="img-fluid"  /> Delivery
+            </a>
             <hr>
+        <div class="col-md-12 col-lg-4 mx-auto">
+            <a class="btn btn-primary btn-xl js-scroll-trigger chownow-order-online"  href='http://ordering.chownow.com/order/10523/locations' target='_blank'>
+                <img src="img/CN_LogoPin_512px.png" class="img-fluid"/> Pick Up
+            </a>
+            -->
+         </div>
           </div>
-          <div class="col-lg-10 mx-auto">
+          <div class="col-md-12 col-lg-10 mx-auto">
             <h1 class="text-uppercase"><strong>A Unique 1950's Diner</strong></h1>
           </div>
         </div>
@@ -201,6 +214,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-67215538-2');
+    $('.dd-online').click(function(){
+        window.open('https://www.doordash.com/store/highway-diner-rocky-mount-534574/en-US')
+    })
 </script>
 
 </body>

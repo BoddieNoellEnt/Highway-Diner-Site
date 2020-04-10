@@ -256,3 +256,28 @@ header.masthead {
  top: 80%;  
 }
 }
+  .btn-image{
+    margin: 0 10px;
+  }
+
+.btn-image:before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.btn-doordash:before{
+  background-image: url('../img/DoorDash_icon-32.png');
+    width: 32px;
+    height: 18px;
+}
+
+.btn-chownow:before{
+  background-image: url('../img/CN_LogoPin_18px.png');
+    width: 18px;
+    height: 18px;
+}
